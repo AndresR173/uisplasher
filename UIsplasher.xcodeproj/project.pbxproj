@@ -13,6 +13,7 @@
 		BA33DDB424AA5CC000DFD5A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA33DDB324AA5CC000DFD5A4 /* Preview Assets.xcassets */; };
 		BA33DDBF24AA5CC000DFD5A4 /* UIsplasherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA33DDBE24AA5CC000DFD5A4 /* UIsplasherTests.swift */; };
 		BA33DDCA24AA5CC000DFD5A4 /* UIsplasherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA33DDC924AA5CC000DFD5A4 /* UIsplasherUITests.swift */; };
+		BA33DDDA24AA5E2D00DFD5A4 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA33DDD924AA5E2D00DFD5A4 /* Secrets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		BA33DDC524AA5CC000DFD5A4 /* UIsplasherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIsplasherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA33DDC924AA5CC000DFD5A4 /* UIsplasherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIsplasherUITests.swift; sourceTree = "<group>"; };
 		BA33DDCB24AA5CC000DFD5A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA33DDD924AA5E2D00DFD5A4 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		BA33DDAB24AA5CBF00DFD5A4 /* UIsplasher */ = {
 			isa = PBXGroup;
 			children = (
+				BA33DDD724AA5E1700DFD5A4 /* Utils */,
 				BA33DDAC24AA5CBF00DFD5A4 /* UIsplasherApp.swift */,
 				BA33DDAE24AA5CBF00DFD5A4 /* ContentView.swift */,
 				BA33DDB024AA5CC000DFD5A4 /* Assets.xcassets */,
@@ -128,6 +131,14 @@
 				BA33DDCB24AA5CC000DFD5A4 /* Info.plist */,
 			);
 			path = UIsplasherUITests;
+			sourceTree = "<group>";
+		};
+		BA33DDD724AA5E1700DFD5A4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BA33DDD924AA5E2D00DFD5A4 /* Secrets.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA33DDAF24AA5CBF00DFD5A4 /* ContentView.swift in Sources */,
+				BA33DDDA24AA5E2D00DFD5A4 /* Secrets.swift in Sources */,
 				BA33DDAD24AA5CBF00DFD5A4 /* UIsplasherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
