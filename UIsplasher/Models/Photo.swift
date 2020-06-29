@@ -7,23 +7,16 @@
 
 import Foundation
 
-struct Photo: Codable {
+struct Photo: Codable, Identifiable, Equatable {
     let id: String
     let width: Int
     let height: Int
-    let downloads: Int
     let likes: Int
-    let description: String
-    let location: Location
+    let description: String?
     let urls: URLS
 }
 
-struct Location: Codable {
-    let city: String
-    let country: String
-}
-
-struct URLS: Codable {
+struct URLS: Codable, Equatable {
     let raw: String
     let full: String
     let regular: String
