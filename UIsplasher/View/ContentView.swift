@@ -13,11 +13,11 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            List {
-                ForEach(viewModel.photos) { photo in
-                    Text("\(photo.likes) likes").foregroundColor(.white)
-                }
+            List(viewModel.photos) { photo in
+                Text("\(photo.likes) likes")
             }
+            .navigationBarTitle("Likes by Photo")
+            .listStyle(GroupedListStyle())
         }.onAppear {
             viewModel.getPhotos()
         }
@@ -26,6 +26,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(viewModel: PhotosViewModel())
+        ContentView(viewModel: PhotosViewModel(source: .local))
     }
 }
